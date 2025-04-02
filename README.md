@@ -1,5 +1,4 @@
 # 🌟 Portafolio 
-# README ECHO CON CURSOR
 Un portafolio web moderno y elegante desarrollado con HTML y CSS, diseñado para mostrar tus proyectos y habilidades de manera profesional.
 
 ## 🎨 Características
