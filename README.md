@@ -101,7 +101,7 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 
 ## ✨ Créditos
 
-- Diseño y desarrollo por [Tu Nombre]
+- Diseño y desarrollo por [Benjamin Ignacio Contreras Alvial]
 - Iconos por [Font Awesome](https://fontawesome.com/)
 - Fuentes por [Google Fonts](https://fonts.google.com/)
 
