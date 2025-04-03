@@ -25,10 +25,11 @@ body {
 .encabezado {
     /* Configuración del encabezado fijo */
     width: 100%;
-    height: 98px;
+    height: auto;
+    min-height: 98px;
     /* Gradiente para efecto de transparencia */
     background: linear-gradient(to bottom,
-        rgba(23, 23, 25, 0.95) 0%,s
+        rgba(23, 23, 25, 0.95) 0%,
         rgba(32, 32, 35, 0.8) 50%,
         rgba(23, 23, 25, 0) 100%);
     /* Efecto de desenfoque para el fondo */
@@ -44,7 +45,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 79px;
+    padding: 1rem 2rem;
     /* Borde inferior sutil */
     border-bottom: 1px solid rgba(139, 92, 246, 0.1);
 }
@@ -58,6 +59,11 @@ body {
 }
 
 /* Menú de navegación */
+.menu-navegacion {
+    display: flex;
+    align-items: center;
+}
+
 .menu-navegacion ul {
     /* Disposición horizontal de los elementos del menú */
     display: flex;
@@ -289,24 +295,42 @@ p {
     /* Ajustes para dispositivos móviles */
     .encabezado {
         height: auto;
-        padding: 20px;
-        flex-direction: column;
+        min-height: 80px;
+        padding: 0.5rem 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo {
+        font-size: 18px;
+        margin-bottom: 0.5rem;
+    }
+
+    .menu-navegacion {
+        width: 100%;
+        justify-content: center;
     }
 
     .menu-navegacion ul {
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 20px;
+        padding: 0.5rem 0;
+    }
+
+    .menu-navegacion a {
+        font-size: 14px;
     }
 
     .boton-contacto {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
+        position: absolute;
+        top: 50%;
+        right: 1rem;
+        transform: translateY(-50%);
     }
 
     .contenido-principal {
-        padding: 120px 20px 40px;
+        padding-top: 120px;
     }
 
     .foto-circulo {
@@ -317,6 +341,20 @@ p {
     .foto-circulo::before {
         width: 270px;
         height: 270px;
+    }
+}
+
+@media (max-width: 480px) {
+    .encabezado {
+        min-height: 100px;
+    }
+
+    .menu-navegacion ul {
+        gap: 15px;
+    }
+
+    .menu-navegacion a {
+        font-size: 12px;
     }
 }
 
